@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Time Capsule</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #141E30, #243B55);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      font-size: 1rem;
+      background-color: #00B4DB;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background-color: #0083B0;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+      background-color: #fff;
+    }
+
+    input[type="submit"] {
+      background-color: #00B4DB;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0083B0;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #ccc;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Send a Message to Your Future Self</h1>
+    <p>Create your own digital time capsule. Write a message, set a future date, and relive the moment when it opens.</p>
+    <a href="#create" class="cta-button">Create Your Capsule</a>
+  </header>
+
+  <div class="form-container" id="create">
+    <h2>Create Your Capsule</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <label for="media">Upload Image/Video (optional)</label>
+      <input type="file" id="media" name="media" accept="image/*,video/*" />
+
+      <label for="date">Unlock Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <input type="submit" value="Save Capsule" />
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Digital Time Capsule. All rights reserved.
+  </footer>
+</body>
+</html>

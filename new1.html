@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anmol EV Cars</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: #f4f4f4; color: #333;
+    }
+    header {
+      background: #0a3d62; color: white; padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1e3799;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white; margin: 0 15px; text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1623783265512-4906073f61f7?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      height: 350px; display: flex; align-items: center; justify-content: center;
+      color: white; text-shadow: 2px 2px 8px #000;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .section {
+      padding: 40px 20px; max-width: 1100px; margin: auto;
+    }
+    .section h2 {
+      text-align: center; margin-bottom: 30px; color: #0a3d62;
+    }
+    .cars {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .car-card {
+      background: white; border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .car-card:hover {
+      transform: scale(1.03);
+    }
+    .car-card img {
+      width: 100%; height: 180px; object-fit: cover;
+    }
+    .car-card .info {
+      padding: 15px;
+    }
+    .contact {
+      background: #1e3799; color: white; text-align: center; padding: 30px 20px;
+    }
+    .footer {
+      background: #0a3d62; color: white; text-align: center;
+      padding: 10px;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Anmol EV Cars</h1>
+    <p>Drive the Future with Electric Power</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#cars">EV Cars</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <h1>Explore The Electric Revolution</h1>
+  </div>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Anmol EV Cars is committed to a sustainable future by offering top-of-the-line electric vehicles. We combine innovation, performance, and eco-friendliness to power your journey.
+    </p>
+  </section>
+
+  <section class="section" id="cars">
+    <h2>Our Electric Vehicles</h2>
+    <div class="cars">
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1602940659807-1ed5ff6f9f8e?auto=format&fit=crop&w=800&q=80" alt="EV Car 1" />
+        <div class="info">
+          <h3>Tesla Model 3</h3>
+          <p>Range: 500km | Fast Charging | ₹45 Lakh</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1620892650628-b0d1df87071c?auto=format&fit=crop&w=800&q=80" alt="EV Car 2" />
+        <div class="info">
+          <h3>Hyundai Ioniq 5</h3>
+          <p>Range: 480km | Premium Design | ₹39 Lakh</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1616267700285-8f3829739b41?auto=format&fit=crop&w=800&q=80" alt="EV Car 3" />
+        <div class="info">
+          <h3>Tata Nexon EV</h3>
+          <p>Range: 312km | Budget Friendly | ₹16 Lakh</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91-9876543210</p>
+    <p>📧 support@anmol-ev-cars.com</p>
+    <p>📍 Delhi, India</p>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Anmol EV Cars. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

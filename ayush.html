@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Slideshow</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="anmol.java"/>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="music/happy-birthday.mp3" type="audio/mpeg">
+  </audio>
+  <div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="slide fade">
+      <img src="images/slide1.jpg" alt="Slide 1" />
+      <div class="text">Happy Birthday! 🎂<br>Wishing you joy and laughter today and always.</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide fade">
+      <img src="images/slide2.jpg" alt="Slide 2" />
+      <div class="text">You make the world brighter just by being you 🌟</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide fade">
+      <img src="images/slide3.jpg" alt="Slide 3" />
+      <div class="text">Every moment with you is a memory worth making 💖</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide fade">
+      <img src="images/slide4.jpg" alt="Slide 4" />
+      <div class="text">Here's to dreams, love, and endless adventures 🚀</div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide fade">
+      <img src="images/slide5.jpg" alt="Slide 5" />
+      <div class="text">You deserve every happiness life can offer 🎁</div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide fade">
+      <img src="images/slide6.jpg" alt="Slide 6" />
+      <div class="text">Let the celebration begin! 🎉</div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide fade">
+      <img src="images/slide7.jpg" alt="Slide 7" />
+      <div class="text">Sending hugs, smiles, and love 💌</div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide fade">
+      <img src="images/slide8.jpg" alt="Slide 8" />
+      <div class="text">A day as special as you are 🌸</div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide fade">
+      <img src="images/slide9.jpg" alt="Slide 9" />
+      <div class="text">Thank you for being a part of my life 🌈</div>
+    </div>
+
+    <!-- Slide 10 -->
+    <div class="slide fade">
+      <img src="images/slide10.jpg" alt="Slide 10" />
+      <div class="text">May this year be your best one yet! ✨</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
